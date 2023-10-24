@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Satoshi-Black';
+    /* You can name the font whatever you like */
+    src: url('./Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    /* You can name the font whatever you like */
+    src: url('./Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    /* You can name the font whatever you like */
+    src: url('./Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2');
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #a4a4a4;
+    color: #fff;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px 20px 10px;
+    border-radius: 5px;
+    background-image: url('./bg3-blur.png');
+    background-position: 50%;
+    position: relative;
+}
+
+.page-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+    background-position: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+}
+
+.name-container {}
+
+#name {
+    font-family: 'Satoshi-Regular', sans-serif;
+    line-height: 1;
+    font-weight: 800;
+    font-size: 2em;
+    margin: 0;
+}
+
+#title {
+    font-family: 'Satoshi-Regular', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+}
+
+.profile-img>img {
+    border-radius: 50%;
+    width: 115px;
+    margin: 0px 50px 0px 50px;
+}
+
+.info-container {}
+
+.info-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Satoshi-Light';
+}
+
+.icon-small {
+    width: 26px;
+}
+
+#info-element-text {
+    padding: 5px;
+}
+
+.icon {
+    width: 20px;
+}
+
+.extra-link-elemnt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    background-color: #5a5a5aad;
+    border-radius: 20px;
+    padding: 0px 10px;
+    transition: background-color 0.3s;
+}
+
+.extra-link-elemnt:hover {
+    background-color: #5a5a5a;
+    /* Increase the size by 5% */
+}
+
+.extra-link-text {
+    padding: 5px 5px 6px 40px;
+}
